@@ -19,7 +19,7 @@ Installation
 
 1. Clone the repository.
 2. Set `PATH` and `PYTHONPATH` in `.bashrc`:
-    ```
-    export PATH=/path/to/virt-tools/bin:$PATH
-    export PYTHONPATH=/path/to/virt-tools/lib:$PYTHONPATH
-    ```
+```
+export PATH=/path/to/virt-tools/bin:$PATH
+export PYTHONPATH=/path/to/virt-tools/lib:$PYTHONPATH
+```
