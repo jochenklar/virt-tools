@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+import optparse
+
+from virt_tools.core import Domain
+
+usage = '''%prog DOMAIN
+Get the vnc port of a given domain (i.e. virtual machine).'''
+
+parser = optparse.OptionParser(usage=usage)
+opt,arg = parser.parse_args()
+
+try:
+    print Domain(arg[0]).vnc()
+except IndexError:
+    parser.error('DOMAIN must be provided.')
